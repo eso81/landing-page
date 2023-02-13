@@ -1,0 +1,188 @@
+/*_________   _________*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/*_________  custom property _________*/
+:root {
+    /*typography*/
+    --font-lora: 'Lora', serif;
+    --font-ubuntu: 'Ubuntu', sans-serif;
+
+    /*colors*/
+    --bg-body:#fcfcfc;
+    --bright-color:#313943;
+    --rodeo-color:#C7B19A;
+    --fountain-color:#55C2B1;
+    --wild-color:#727EAB;
+    --amber-color:#FDB750;
+    --orange-color:#FC2E20;
+    --white-color:#FAFCF6;
+    --black-color:#040000;
+
+    /*transition*/
+    --transition-01:all .4s ease;
+    --transition-02: .5s ease-out;
+
+
+}
+
+/*_________  reset _________*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: var(--font-ubuntu);
+    line-height: 1.5;
+    font-size: 10px;
+    background-color: var(--bg-body);
+}
+
+::-webkit-scrollbar { width: 10px; height: 30px; }
+
+::-webkit-scrollbar-track { background-color: var(--bright-color) }
+
+::-webkit-scrollbar-thumb { background-color: var(--orange-color); }
+
+::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*_________  header  _________*/
+.header{
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 4px;
+}
+.navbar{
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.navbar .nav-item{
+    margin-left: 20px;
+}
+.navbar .nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bright-color);
+    transition: var(--transition-01);
+    text-transform: capitalize;
+}
+.navbar .nav-item .nav-link:hover{
+    color: var(--orange-color);
+}
+.navbar-brand span{
+    font-size: 32px;
+    font-weight: 600;
+
+    color: var(---color);
+}
+.navbar-brand i{
+    font-size: 2rem;
+    margin-left: 6px;
+}
+.media-social i{
+    padding-left: 15px;
+    font-size: 20px;
+    color: var(--amber-color);
+    cursor: pointer;
+    transition: var(--transition-02);
+}
+.media-social i:hover{
+    transform: scale(1.2);
+}
+.media-social .fa-moon{
+    color: var(--black-color);
+}
+/*_________ classe reused   _________*/
+.btn{
+    padding: 12px 30px;
+    width: max-content;
+    border-radius: 0;
+    border: 1px solid var(--orange-color);
+    background-color: var(--orange-color);
+    color: var(--bg-body);
+    transition: var(--transition-02);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    color: var(--orange-color);
+    background-color: transparent;
+    border: 1px solid var(--orange-color);
+}
+/*_________   _________*/
+.hero h1{
+    font-size: 3.4rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+.hero h1 span{
+    color: var(--fountain-color);
+}
+.hero p{
+    padding-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    font-family: var(--font-lora);
+}
+/*_________   _________*/
+
+
+/*_________   _________*/
+
+
+/*_________   _________*/
+
+
+/*_________ media queries  _________*/
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .header{
+        background-color: var(--white-color);
+    }
+    .navbar{
+        margin-top: 10px;
+    }
+    .navbar .nav-item {
+        padding-bottom: 15px;
+    }
+    .hero{
+        padding: 50px 20px 10px 20px;
+    }
+    .hero h1{
+        font-size: 35px;
+        text-transform: none;
+        text-align: center;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {  }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { }
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {  }
