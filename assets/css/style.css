@@ -57,7 +57,31 @@ a{
 li{
     list-style: none;
 }
-
+/*_________ classe reused   _________*/
+.cover{
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.btn{
+    padding: 12px 30px;
+    width: max-content;
+    border-radius: 0;
+    border: 1px solid var(--orange-color);
+    background-color: var(--orange-color);
+    color: var(--bg-body);
+    transition: var(--transition-02);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    color: var(--orange-color);
+    background-color: transparent;
+    border: 1px solid var(--orange-color);
+}
 /*_________  header  _________*/
 .header{
     background-color: var(--white-color);
@@ -105,26 +129,7 @@ li{
 .media-social .fa-moon{
     color: var(--black-color);
 }
-/*_________ classe reused   _________*/
-.btn{
-    padding: 12px 30px;
-    width: max-content;
-    border-radius: 0;
-    border: 1px solid var(--orange-color);
-    background-color: var(--orange-color);
-    color: var(--bg-body);
-    transition: var(--transition-02);
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.btn:hover{
-    color: var(--orange-color);
-    background-color: transparent;
-    border: 1px solid var(--orange-color);
-}
+
 /*_________   _________*/
 .hero h1{
     font-size: 3.4rem;
@@ -143,8 +148,11 @@ li{
     text-align: justify;
     font-family: var(--font-lora);
 }
-/*_________   _________*/
 
+/*_________ featured  _________*/
+.featured{
+    background-color: var(--bright-color);
+}
 
 /*_________   _________*/
 
