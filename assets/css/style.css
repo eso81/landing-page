@@ -61,7 +61,7 @@ li{
 .cover{
     align-items: center;
     justify-content: space-around;
-    height: 100vh;
+    min-height: 100vh;
 }
 .btn{
     padding: 12px 30px;
@@ -84,8 +84,8 @@ li{
 }
 /*_________  header  _________*/
 .header{
-    background-color: var(--white-color);
-    box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 4px;
+    background-color: transparent;
+   
 }
 .navbar{
     align-items: center;
@@ -93,6 +93,14 @@ li{
     padding-top: 12px;
     padding-bottom: 12px;
 }
+/*quando rolar a página*/
+.navbar.scrolled {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--bg-body);
+    box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 4px;
+}
+
 .navbar .nav-item{
     margin-left: 20px;
 }
@@ -148,7 +156,12 @@ li{
     text-align: justify;
     font-family: var(--font-lora);
 }
-
+/*-------------------*/
+.about{
+    background-color: var(--orange-color);
+    height: 300px;
+    padding-top: 40px;
+}
 /*_________ featured  _________*/
 .featured{
     background-color: var(--bg-color);  
@@ -187,11 +200,13 @@ li{
 
 /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
+    
     .header{
         background-color: var(--white-color);
     }
     .navbar{
-        margin-top: 10px;
+      
+        background-color: var(--white-color);
     }
     .navbar .nav-item {
         padding-bottom: 15px;
@@ -203,6 +218,7 @@ li{
         font-size: 35px;
         text-transform: none;
         text-align: center;
+        margin-top: 120px;
     }
     .hero .btn{
         margin-bottom: 30px;
@@ -244,7 +260,12 @@ li{
 @media (max-width: 991.98px) {  }
 
 /* Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) { }
+@media (max-width: 1199.98px) {
+    .cover{
+        align-items: center;
+        justify-content: space-around;
+        min-height: 60vh;
+    }
 
 /* X-Large devices (large desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {  }
