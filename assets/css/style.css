@@ -157,11 +157,7 @@ li{
     font-family: var(--font-lora);
 }
 /*-------------------*/
-.about{
-    background-color: var(--orange-color);
-    height: 300px;
-    padding-top: 40px;
-}
+
 /*_________ featured  _________*/
 .featured{
     background-color: var(--bg-color);  
@@ -181,18 +177,53 @@ li{
     text-align: center;
     margin-bottom: 40px;
 }
+
 .list-group-item{
     font-size: 18px;
-    transition: var(--transition-02);
+    transition: var(--transition-02);   
 }
 .list-group-item  i{
     font-size: 1.3rem;
     color: var(--orange-color);
 }
 
-/*_________   _________*/
-
-
+/*_________ about _________*/
+.about{
+    background-color: var(--bright-color);
+    min-height: 70vh;
+}
+.about-box{
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.about-box-2{
+    background-image: url('../images/img-05.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute;
+}
+.about h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: var(--bg-body);
+}
+.about h4{
+    text-align: justify;
+    font-family: var(--font-lora);
+    color: var(--bg-body);
+    line-height: 1.6;
+    font-weight: 200;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.about span{
+    color: var(--amber-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--font-ubuntu);
+}
 /*_________   _________*/
 
 
@@ -200,7 +231,7 @@ li{
 
 /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-    
+
     .header{
         background-color: var(--white-color);
     }
@@ -213,6 +244,7 @@ li{
     }
     .hero{
         padding: 50px 20px 10px 20px;
+        flex-direction: row-reverse;
     }
     .hero h1{
         font-size: 35px;
@@ -248,9 +280,8 @@ li{
     .list-group-item  i:hover{
         font-size: 1rem;
         color: var(--white-color);
-    
-       
     }
+   
  }
 
 /* Small devices (landscape phones, less than 768px)*/
